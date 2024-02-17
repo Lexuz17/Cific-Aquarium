@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+
+body{
+    background-image: linear-gradient(#1e639e, rgba(0.1,38,130,30))
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+section .wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../ASSET/Index-Asset/wave3.png);
+    background-size: 1000px 100px;
+    animation: animate 4s ease-in-out infinite;
+    animation-delay: calc(var(--i) * 0.25s);
+}
+
+.back-image{
+    position: absolute;
+    width: 1505px;
+    bottom: 0;
+    z-index: -1;
+}
+
+.greeting .container{
+    display: inline-block;
+    position: absolute;
+    bottom: 40%;
+    margin: auto;
+    width: 100%;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.greeting h1{
+    font-size: 6vh;
+    font-weight: 800;
+    line-height: 45px;
+}
+
+.greeting .container-one{
+    word-wrap: normal;
+    margin: 0 1000px 0 12%;
+    
+}
+
+.greeting .container-two{
+    font-size: 20px;
+    word-wrap: normal;
+    margin: 10px 900px 0 12%;
+}
+
+section .wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    background-position-x: 400px;
+}
+
+section .wave#wave2{
+    z-index: 999;
+    opacity: 0.5;
+    background-position-x: 300ox;
+}
+
+section .wave#wave3{
+    z-index: 998;
+    opacity: 0.25;
+    background-position-x: 200px;
+}
+
+section .wave#wave4{
+    z-index: 999;
+    opacity: 0.7;
+    background-position-x: 100px;
+}
+
+@keyframes animate{
+    0%,100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+}
+.sec{
+    /* background-color: aquamarine; */
+    align-items: center;
+    margin-left: 160px;
+    display: flex;
+    padding: 30px;
+    /* padding-bottom: 100vh; */
+    margin-right: 160px;
+}
+
+.sec .calendar{
+    font-size: 40px;
+    margin: 0;
+    color: #fff;
+    /* background-color: aqua; */
+
+}
+
+.sec h1{
+    font-size: 3em;
+    color: #fff;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-left: 20px;
+}
+
+.sec p{
+    font-size: 1.2em;
+    color: #111;
+}
+
+.events .event-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    
+}
+
+.events .event-container .box{
+    box-shadow: 0 .3rem 1.5rem rgba(0,0,0,.2);
+    background-color: rgba(0, 140, 255, 0.285);
+    border-radius: .5rem;
+    position: relative; 
+}
+
+.events .event-container .box .image{
+    cursor: pointer;
+    position: relative;
+    overflow:hidden;
+}
+
+.events .event-container .box .image img{
+    height:13rem;
+}
+
+.events .event-container .box .content{
+    padding-left: 10px;;
+    color: rgba(255, 255, 255, 0.94);
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.events .event-container .box .content h3{
+    text-transform: capitalize;
+    font-weight: 900;
+    margin: 0 0 10px;
+    font-size: 24px;
+}
+
+.events .event-container .box .content .time{
+    text-transform: capitalize;
+    font-weight: 800;
+    margin: 0 0 10px;
+}
+
+.events .event-container .box .content nav{
+    cursor: pointer;
+    text-transform: uppercase;
+    color: rgb(178, 178, 178);
+    font-weight: 800;
+    font-size: 12.8px;
+    padding-left: 70%;
+    margin: 0 0 10px;
+}
+
+.events .event-container .box .content nav:hover{
+    text-decoration: underline;
+}
+
+.events .event-container .box .content p{
+    padding-bottom: 15px;
+}
+
+.bubble-container{
+    position: absolute;
+}
+
+.bubble-container .bubble{
+    width: 150px;
+    margin-top: 1rem;
+    margin-left: 20px;
+    animation: bubble 25s ease-in-out infinite;
+}
+
+.bubble2-container{
+    position: absolute;
+}
+
+.bubble2-container .bubble{
+    width: 150px;
+    margin-top: 0;
+    margin-left: 1200px;
+    animation: bubble2 20s ease-in-out infinite;
+}
+
+.hiu1-container{
+    position: absolute;
+}
+
+
+.hiu1-container .hiu1{
+    margin-top: 20rem;
+    width: 600px;
+    margin-left: -10rem;
+    animation: slide 10s ease-out infinite;
+}
+
+@keyframes slide{
+    0%,100%{
+        transform: translateX(0px) translateY(0px);
+    }
+    50%{
+        transform: translateX(50px) translateY(10px);
+    }
+}
+
+@keyframes bubble{
+    0%,100%{
+        transform: translateX(0px) translateY(0px);
+    }
+    50%{
+        transform: translateX(800px) translateY(50px);
+    }
+}
+
+@keyframes bubble2{
+    0%,100%{
+        transform: translateX(0px) translateY(0px);
+    }
+    50%{
+        transform: translateX(-940px) translateY(200px);
+    }
+}
+
+.hiu2-container{
+    position: absolute;
+
+}
+
+.hiu2-container .hiu2{
+    margin-top: 19rem;
+    width: 600px;
+    margin-left: 845px;
+    animation: slide2 10s ease-out infinite;
+}
+
+
+@keyframes slide2{
+    0%,100%{
+        transform: translateX(60px)translateY(6px);
+    }
+    50%{
+        transform: translateX(0px)translateY(0px);
+        
+    }
+}
+
+.offer-container{
+    height: 70vh;
+    margin-left: 70px;
+    align-items: center;
+    justify-content: center;
+}
+
+.offer-container .inner-container h1{
+    /* position: absolute; */
+    display: flex;
+    font-size: 60px;
+    color: #fff;
+    justify-content: center;
+    margin-top: -200px;
+    margin-bottom: 90px;
+    margin-right: 50px;
+    font-family: 'Nunito Sans', sans-serif;
+    /* opacity: 0.1; */
+    
+    /* background-color: #0362b5; */
+}
+
+.offer-container .row .image {
+    /* background-color: aqua; */
+    justify-content: center;
+    display: inline-block;
+	text-align:center;
+	width: 33%;
+    /* padding-right: -50px; */
+	/* float: left; */
+}
+figure {
+    overflow: hidden;
+	margin: 0 0 0 0;
+}
+.offer-container h3 {
+    background-color:rgba(0, 0, 0, 0.318);
+    position: absolute;
+	color: rgb(255, 255, 255);
+	margin-top: -160px;
+    margin-left: 20px;
+    padding: 0 10px;
+    font-size: 24px;
+    font-weight: 800;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.offer-container .image img {
+    display: block;
+	width: 80%;
+	height: auto;
+	cursor: pointer;
+}
+
+.offer-container .image #zoom-In figure img {
+    transform: scale(1);
+	transition: 1s ease-in-out;
+}
+.offer-container .image #zoom-In figure:hover img {
+	transform: scale(1.2);
+}
+
+.virtual{
+    height: 70vh;
+}
+
+.virtual .virtual-container .image-container .block{
+    width: 100%;
+    height: 451.9px;
+    background-color: rgba(25, 0, 255, 0.478);
+    position: absolute;
+    /* display: flex; */
+}
+
+.virtual .virtual-container .image{
+    width: 100%;
+}
+
+.virtual .virtual-container .content{
+    position: relative;
+    /* background-color: #fff; */
+    width: 100%;
+    bottom: 300px;
+    /* margin: auto; */
+    line-height: 45px;
+    text-align: center;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.virtual .content h1{
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.virtual .content h3{
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.virtual .content p{
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    /* background-color: rgb(255, 29, 29); */
+    margin: 15px 400px;
+    line-height: 25px;
+}
+
+
+
+.button-container{
+    display: flex;
+    align-items: center;
+    padding: 220px 0 0 180px;
+    min-height: 100vh;
+}
+
+.button{
+    display: block;
+    position: relative;
+    border: 2px solid #0371d9;
+    font-size: 18px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #0084ff;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.button span{
+    position: relative;
+    transition: 1s;
+    z-index: 1;
+}
+
+.button:hover span{
+    color: #fff;
+}
+
+.button .water{
+    position: absolute;
+    top:  calc(100% + 22px);
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0084ff;
+    transition: 1s;
+}
+
+.button:hover .water{
+    top: 0;
+}
+
+.button .water::before{
+    content: '';
+    position: absolute;
+    top: -22px;
+    left: 0;
+    width: 100%;
+    height: 22px;
+    background: url(../ASSET/Index-Asset/wave2.png);
+    animation: oasis 0.5s linear infinite;
+}
+
+
+.button2-container{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 230, 0);
+    left: 42.4%;
+    margin-top: -300px;
+}
+
+.button2{
+    display: block;
+    position: relative;
+    border: 2px solid #0371d9;
+    font-size: 18px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #0084ff;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.button2 span{
+    position: relative;
+    transition: 1s;
+    z-index: 1;
+}
+
+.button2:hover span{
+    color: #fff;
+}
+
+.button2 .water{
+    position: absolute;
+    top:  calc(100% + 22px);
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0084ff;
+    transition: 1s;
+}
+
+.button2:hover .water{
+    top: 0;
+}
+
+.button2 .water::before{
+    content: '';
+    position: absolute;
+    top: -22px;
+    left: 0;
+    width: 100%;
+    height: 22px;
+    background: url(../ASSET/Index-Asset/wave2.png);
+    animation: oasis 0.5s linear infinite;
+}
+
+@keyframes oasis{
+    0%{
+        background-position-x: 0;
+        /* background-position-y: -22; */
+    }
+    100%{
+        background-position-x: 118px;
+        /* background-position-y: -22px; */
+    }
+}

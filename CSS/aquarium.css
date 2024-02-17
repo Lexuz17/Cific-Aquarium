@@ -1,0 +1,725 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    /* overflow-x: hidden; */
+}
+
+
+header {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 0;
+  background-color: #0b2a5bf2;
+  z-index: 100000000000;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+    padding-right: 700px;
+}
+
+header .logo img{
+    /* max-width: 100px; */
+    width: 180px;
+}
+
+.nav__links {
+    list-style: none;
+    display: flex;
+}
+
+.nav__links a, .login, .overlay__content a {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
+    font-size: large;
+    color: #edf0f1;
+    text-decoration: none;
+  }
+  
+.nav__links li {
+    padding: 0px 30px;
+}
+  
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+  
+.nav__links li a:hover {
+  color: #007ea4;
+  text-decoration: underline;
+}
+  
+.login {
+  margin-left: 20px;
+  background-color: rgba(33, 191, 231, 0.847);
+  padding: 9px 25px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+  
+.login:hover {
+  background-color: #007ea4;
+  text-decoration: underline;
+}
+
+.footer{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #072540;
+    font-family: 'Nunito Sans', sans-serif;
+    justify-content: center;
+    align-items: center;
+    
+}
+.footer .group-1{
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.footer .group-1 .box figure img{
+    width: 250px;
+    box-sizing: border-box;
+}
+.footer .group-1 .box figure{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .group-1 .box h2{
+    color: #fff;
+    margin-bottom: 18px;
+    margin-right: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    /* background-color: aqua; */
+    text-align: center;
+    transition: 0.1s ease-out;
+}
+
+.footer .group-1 .box h2:hover{
+    text-decoration: underline;
+    color: rgba(179, 179, 179, 0.665)
+}
+
+.footer .group-1 .box .social:hover{
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+}
+
+.footer .group-1 .red-social a{
+    box-sizing: border-box;
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 35px;
+    color: #fff;
+    margin-right: 10px;
+    margin-left: 20px;
+    padding-left: 55px;
+    /* background-color: #0d2033; */
+    text-align: center;
+    transition: all 300ms ease;
+    font-size: 25px;
+}
+.footer .group-1 .red-social a:hover{
+    color: rgb(117, 115, 115);
+}
+
+.footer .group-2 small{
+    font-size: 15px;
+}
+
+
+.head {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 2vw;
+    font-weight: 800;
+    margin-top: 8%;
+    margin-left: 14%;
+}
+/* background-color: #072540; */
+
+.line {
+    background-color: black;
+    width: 72%;
+    height: 2px;
+    opacity: 0.2;
+    margin-top: 20px;
+    margin-left: 14%;
+    position: absolute;
+}
+
+.result {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1vw;
+    margin-top: 5%;
+    margin-left: 14%;
+}
+
+.whalesharkphoto {
+    position: relative;
+    float: left;
+    width: 15%;
+    height: auto;
+    margin-top: 2%;
+    margin-left: 14%;
+    cursor: pointer;
+}
+
+.whalesharkname {
+    position: absolute;
+    margin-top: 13%;
+    margin-left: 18%;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
+
+.electriceelphoto {
+    position: relative;
+    float: left;
+    width: 15%;
+    height: auto;
+    margin-top: 2%;
+    margin-left: 3%;
+    cursor: pointer;
+}
+
+.electriceelname {
+    position: absolute;
+    margin-top: 13%;
+    margin-left: 36.5%;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
+
+.mantarayphoto {
+    position: relative;
+    float: left;
+    width: 15%;
+    height: auto;
+    margin-top: 2%;
+    margin-left: 3%;
+    cursor: pointer;
+}
+
+.mantarayname {
+    position: absolute;
+    margin-top: 13%;
+    margin-left: 54.3%;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
+
+.hammerheadphoto {
+    position: relative;
+    width: 17.8%;
+    height: auto;
+    margin-top: 2%;
+    margin-left: 3%;
+    cursor: pointer;
+}
+
+.hammerheadname {
+    position: absolute;
+    margin-top: 0.8%;
+    margin-left: 71%;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
+
+.borderhover {
+    border: 8px solid rgb(255, 221, 0);
+    position: absolute;
+    width: 14.2%;
+    height: 19%;
+    margin-left: 14%;
+    margin-top: 2%;
+    display: none;
+}
+
+.borderhover2 {
+    border: 8px solid rgb(255, 221, 0);
+    position: absolute;
+    width: 14.2%;
+    height: 19%;
+    margin-left: 32%;
+    margin-top: 2%;
+    display: none;
+}
+
+.borderhover3 {
+    border: 8px solid rgb(255, 221, 0);
+    position: absolute;
+    width: 14.3%;
+    height: 19%;
+    margin-left: 49.9%;
+    margin-top: 2%;
+    display: none;
+}
+
+.borderhover4 {
+    border: 8px solid rgb(255, 221, 0);
+    position: absolute;
+    width: 17%;
+    height: 19%;
+    margin-left: 68%;
+    margin-top: -10.3%;
+    display: none;
+}
+
+.whalesharkphoto:hover~.borderhover {
+    display: block;
+}
+
+.electriceelphoto:hover~.borderhover2 {
+    display: block;
+}
+
+.mantarayphoto:hover~.borderhover3 {
+    display: block;
+}
+
+.hammerheadphoto:hover~.borderhover4 {
+    display: block;
+}
+
+.piranhaphoto {
+    position: relative;
+    float: left;
+    width: 15%;
+    height: auto;
+    margin-top: 4%;
+    margin-left: 14%;
+    cursor: pointer;
+}
+
+.piranhaname {
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 15.5%;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
+
+.kingangelfishphoto {
+    position: relative;
+    float: left;
+    width: 15%;
+    height: auto;
+    margin-top: 4%;
+    margin-left: 3%;
+    cursor: pointer;
+}
+
+.kingangelfishname {
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 35.3%;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
+
+.seanettlephoto {
+    position: relative;
+    float: left;
+    width: 15%;
+    height: auto;
+    margin-top: 4%;
+    margin-left: 3%;
+    cursor: pointer;
+}
+
+.seanettlename {
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 52.1%;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
+
+.lesserdevilrayphoto {
+    position: relative;
+    width: 17.8%;
+    height: auto;
+    margin-top: 4%;
+    margin-left: 3%;
+    cursor: pointer;
+}
+
+.lesserdevilrayname {
+    position: absolute;
+    margin-top: 0.8%;
+    margin-left: 72.3%;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
+
+.borderhover5 {
+    border: 8px solid rgb(255, 221, 0);
+    position: absolute;
+    width: 14.2%;
+    height: 19%;
+    margin-left: 14%;
+    margin-top: 4%;
+    display: none;
+}
+
+.borderhover6 {
+    border: 8px solid rgb(255, 221, 0);
+    position: absolute;
+    width: 14.2%;
+    height: 19%;
+    margin-left: 32%;
+    margin-top: 4%;
+    display: none;
+}
+
+.borderhover7 {
+    border: 8px solid rgb(255, 221, 0);
+    position: absolute;
+    width: 14.3%;
+    height: 19%;
+    margin-left: 49.9%;
+    margin-top: 4%;
+    display: none;
+}
+
+.borderhover8 {
+    border: 8px solid rgb(255, 221, 0);
+    position: absolute;
+    width: 17%;
+    height: 19%;
+    margin-left: 68%;
+    margin-top: -10.3%;
+    display: none;
+}
+
+.piranhaphoto:hover~.borderhover5 {
+    display: block;
+}
+
+.kingangelfishphoto:hover~.borderhover6 {
+    display: block;
+}
+
+.seanettlephoto:hover~.borderhover7 {
+    display: block;
+}
+
+.lesserdevilrayphoto:hover~.borderhover8 {
+    display: block;
+}
+
+.reefmantaphoto {
+    position: relative;
+    float: left;
+    width: 15%;
+    height: auto;
+    margin-top: 4%;
+    margin-left: 14%;
+    cursor: pointer;
+}
+
+.reefmantaname {
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 16.9%;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
+
+.greathammerheadphoto {
+    position: relative;
+    float: left;
+    width: 15%;
+    height: auto;
+    margin-top: 4%;
+    margin-left: 3%;
+    cursor: pointer;
+}
+
+.greathammerheadname {
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 31.8%;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
+
+.moonjellyfishphoto {
+    position: relative;
+    float: left;
+    width: 15%;
+    height: auto;
+    margin-top: 4%;
+    margin-left: 3%;
+    cursor: pointer;
+}
+
+.moonjellyfishname {
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 53%;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
+
+.sandbarsharkphoto {
+    position: relative;
+    width: 17.8%;
+    height: auto;
+    margin-top: 4%;
+    margin-left: 3%;
+    cursor: pointer;
+}
+
+.sandbarsharkname {
+    position: absolute;
+    margin-top: 0.8%;
+    margin-left: 72%;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
+
+.borderhover9 {
+    border: 8px solid rgb(255, 221, 0);
+    position: absolute;
+    width: 14.2%;
+    height: 19%;
+    margin-left: 14%;
+    margin-top: 4%;
+    display: none;
+}
+
+.borderhover10 {
+    border: 8px solid rgb(255, 221, 0);
+    position: absolute;
+    width: 14.2%;
+    height: 19%;
+    margin-left: 32%;
+    margin-top: 4%;
+    display: none;
+}
+
+.borderhover11 {
+    border: 8px solid rgb(255, 221, 0);
+    position: absolute;
+    width: 14.3%;
+    height: 19%;
+    margin-left: 49.9%;
+    margin-top: 4%;
+    display: none;
+}
+
+.borderhover12 {
+    border: 8px solid rgb(255, 221, 0);
+    position: absolute;
+    width: 17%;
+    height: 19%;
+    margin-left: 68%;
+    margin-top: -10.3%;
+    display: none;
+}
+
+.reefmantaphoto:hover~.borderhover9 {
+    display: block;
+}
+
+.greathammerheadphoto:hover~.borderhover10 {
+    display: block;
+}
+
+.moonjellyfishphoto:hover~.borderhover11 {
+    display: block;
+}
+
+.sandbarsharkphoto:hover~.borderhover12 {
+    display: block;
+}
+
+.tigersharkphoto {
+    position: relative;
+    float: left;
+    width: 15%;
+    height: auto;
+    margin-top: 4%;
+    margin-left: 14%;
+    cursor: pointer;
+}
+
+.tigersharkname {
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 18.3%;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
+
+.greenseaturtlephoto {
+    position: relative;
+    float: left;
+    width: 15%;
+    height: auto;
+    margin-top: 4%;
+    margin-left: 3%;
+    cursor: pointer;
+}
+
+.greenseaturtlename {
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 34.3%;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
+
+.bluespinephoto {
+    position: relative;
+    float: left;
+    width: 15%;
+    height: auto;
+    margin-top: 4%;
+    margin-left: 3%;
+    cursor: pointer;
+}
+
+.bluespinename {
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 50.7%;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
+
+.bluespottedphoto {
+    position: relative;
+    width: 17.8%;
+    height: auto;
+    margin-top: 4%;
+    margin-left: 3%;
+    cursor: pointer;
+}
+
+.bluespottedname {
+    position: absolute;
+    margin-top: 0.8%;
+    margin-left: 70.2%;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
+
+.borderhover13 {
+    border: 8px solid rgb(255, 221, 0);
+    position: absolute;
+    width: 14.2%;
+    height: 19%;
+    margin-left: 14%;
+    margin-top: 4%;
+    display: none;
+}
+
+.borderhover14 {
+    border: 8px solid rgb(255, 221, 0);
+    position: absolute;
+    width: 14.2%;
+    height: 19%;
+    margin-left: 32%;
+    margin-top: 4%;
+    display: none;
+}
+
+.borderhover15 {
+    border: 8px solid rgb(255, 221, 0);
+    position: absolute;
+    width: 14.3%;
+    height: 19%;
+    margin-left: 49.9%;
+    margin-top: 4%;
+    display: none;
+}
+
+.borderhover16 {
+    border: 8px solid rgb(255, 221, 0);
+    position: absolute;
+    width: 17%;
+    height: 19%;
+    margin-left: 68%;
+    margin-top: -10.3%;
+    display: none;
+}
+
+.tigersharkphoto:hover~.borderhover13 {
+    display: block;
+}
+
+.greenseaturtlephoto:hover~.borderhover14 {
+    display: block;
+}
+
+.bluespinephoto:hover~.borderhover15 {
+    display: block;
+}
+
+.bluespottedphoto:hover~.borderhover16 {
+    display: block;
+}
+
+.endofpage {
+    margin-top: 100px;
+}
